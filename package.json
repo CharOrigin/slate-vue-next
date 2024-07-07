@@ -20,26 +20,38 @@
     "@razors/build-commit": "^0.0.20",
     "@razors/build-rollup": "^0.0.20",
     "@vue/babel-plugin-jsx": "^1.0.0-rc.5",
-    "@vue/compiler-sfc": "^3.0.0-beta.14",
+    "@vue/compiler-sfc": "^3.4.31",
     "babel-loader": "^8.1.0",
-    "css-loader": "^3.5.2",
+    "css-loader": "^7.1.2",
     "html-webpack-plugin": "^4.0.4",
-    "lerna": "^3.20.2",
+    "lerna": "^8.1.6",
     "less": "^3.11.1",
     "less-loader": "^5.0.0",
     "npm-run-all": "^4.1.5",
     "style-loader": "^1.1.4",
     "ts-loader": "^6.2.2",
     "typescript": "^3.8.3",
-    "vue-loader": "^16.0.0-rc.1",
-    "webpack": "^4.42.1",
-    "webpack-cli": "^3.3.11",
-    "webpack-dev-server": "^3.10.3",
+    "webpack": "^5.92.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4",
     "webpack-merge": "^4.2.2"
   },
   "dependencies": {
+    "@babel/preset-env": "^7.24.7",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^26.0.1",
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@vue/babel-preset-app": "^5.0.8",
+    "rollup": "^2.79.1",
+    "rollup-plugin-css-only": "^4.5.2",
+    "rollup-plugin-node-externals": "^7.1.2",
+    "rollup-plugin-preserve-shebang": "^1.0.1",
+    "rollup-plugin-typescript3": "^3.0.5",
+    "rollup-plugin-vue": "^6.0.0",
     "slate-hyperscript": "^0.58.3",
     "vue": "^3.0.4",
+    "vue-loader": "^17.3.1",
     "vue-router": "4.0.0-alpha.12"
   },
   "config": {
@@ -48,6 +60,6 @@
     }
   },
   "resolutions": {
-    "rollup-plugin-vue": "^6.0.0-beta.10"
+    "rollup-plugin-vue": "^6.0.0"
   }
 }

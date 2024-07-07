@@ -1,5 +1,5 @@
 import Children from './children';
-import { useEditor, useEffect, useRef, useSlate } from '../plugins';
+import { useEditor, useEffect, useRef, useSlate } from '../plugins/index';
 import {
   EDITOR_TO_ELEMENT, NODE_TO_ELEMENT, ELEMENT_TO_NODE, IS_READ_ONLY,
   IS_FIREFOX, IS_SAFARI, IS_EDGE_LEGACY,
@@ -7,7 +7,7 @@ import {
   addOnBeforeInput,
   EditableComponent,
   VueEditor
-} from 'slate-vue-shared';
+} from '../../slate-vue-shared/index';
 import { Range } from 'slate';
 import { PropType, defineComponent, ref, provide, reactive, onUpdated } from 'vue';
 
