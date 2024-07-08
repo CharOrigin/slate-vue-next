@@ -8,62 +8,40 @@
     "url": "https://github.com/marsprince/slate-vue-next"
   },
   "scripts": {
-    "build": "rollup --config ./config/rollup/rollup.config.js",
-    "vite": "vite build --config vite.config.js",
+    "build": "vite build --config vite.config.js",
     "serve": "webpack-dev-server --config ./config/webpack/site/webpack.dev.conf.js",
     "release:site": "webpack --config ./config/webpack/site/webpack.publish.conf.js",
-    "watch": "yarn build --watch",
-    "start": "npm-run-all --parallel --print-label watch serve",
     "commit": "rz-commit"
   },
   "devDependencies": {
     "@razors/build-babel": "^0.0.20",
-    "@razors/build-commit": "^0.0.20",
-    "@razors/build-rollup": "^0.0.20",
+    "@vitejs/plugin-vue": "^5.0.5",
     "@vitejs/plugin-vue-jsx": "^4.0.0",
     "@vue/babel-plugin-jsx": "^1.0.0-rc.5",
-    "@vue/compiler-sfc": "^3.4.31",
     "babel-loader": "^8.1.0",
     "css-loader": "^7.1.2",
-    "html-webpack-plugin": "^4.0.4",
-    "lerna": "^8.1.6",
-    "less": "^3.11.1",
-    "less-loader": "^5.0.0",
-    "npm-run-all": "^4.1.5",
+    "html-webpack-plugin": "^5.6.0",
+    "less": "^4.2.0",
+    "less-loader": "^12.2.0",
+    "rollup": "^4.18.0",
     "rollup-plugin-terser": "^7.0.2",
-    "style-loader": "^1.1.4",
+    "style-loader": "^4.0.0",
     "ts-loader": "^6.2.2",
     "typescript": "^3.8.3",
     "vite": "^5.3.3",
+    "vue-loader": "^17.4.2",
     "webpack": "^5.92.1",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^5.0.4",
     "webpack-merge": "^4.2.2"
   },
   "dependencies": {
-    "@babel/preset-env": "^7.24.7",
-    "@rollup/plugin-babel": "^6.0.4",
-    "@rollup/plugin-commonjs": "^26.0.1",
-    "@rollup/plugin-json": "^6.1.0",
-    "@rollup/plugin-node-resolve": "^15.2.3",
-    "@vue/babel-preset-app": "^5.0.8",
-    "rollup": "^2.79.1",
-    "rollup-plugin-css-only": "^4.5.2",
-    "rollup-plugin-node-externals": "^7.1.2",
-    "rollup-plugin-preserve-shebang": "^1.0.1",
-    "rollup-plugin-typescript3": "^3.0.5",
-    "rollup-plugin-vue": "^6.0.0",
-    "slate-hyperscript": "^0.58.3",
     "vue": "^3.0.4",
-    "vue-loader": "^17.3.1",
     "vue-router": "4.0.0-alpha.12"
   },
   "config": {
     "commitizen": {
       "path": "cz-conventional-changelog"
     }
-  },
-  "resolutions": {
-    "rollup-plugin-vue": "^6.0.0"
   }
 }

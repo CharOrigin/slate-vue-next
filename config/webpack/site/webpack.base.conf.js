@@ -1,3 +1,10 @@
+/*
+ * @Author: yilong
+ * @Date: 2024-07-08 09:02:52
+ * @LastEditors: yilong
+ * @LastEditTime: 2024-07-08 14:52:41
+ * @Descripttion: 
+ */
 const path = require('path')
 const {VueLoaderPlugin} = require('vue-loader')
 const HTMLWebpackPlugin = require('html-webpack-plugin');
@@ -10,7 +17,7 @@ module.exports = {
       { test: /\.js$/, use: 'babel-loader', exclude: /node_modules/},
       { test: /\.jsx$/, use: 'babel-loader'},
       { test: /\.vue$/, use: 'vue-loader' },
-      { test: /\.tsx$/, use: ['babel-loader','ts-loader']},
+      { test: /\.tsx$/, use: ['babel-loader', 'ts-loader']},
       {
         test: /\.ts$/,
         use: [
@@ -18,6 +25,7 @@ module.exports = {
           {
             loader: 'ts-loader',
             options: {
+							transpileOnly: true,
               appendTsSuffixTo: [/\.vue$/],
             }
           },
