@@ -8,15 +8,14 @@
 import { resolve } from "path"
 import { defineConfig } from 'vite'
 import vueJsx from '@vitejs/plugin-vue-jsx'
-import vue from '@vitejs/plugin-vue'
 
 export default defineConfig({
 	resolve: {
 		extensions: ['.mjs', '.js', '.ts', '.jsx', '.tsx', '.json', '.vue']
 	},
-	// plugins: [
-	// 	vueJsx(),
-	// ],
+	plugins: [
+		vueJsx(),
+	],
 	build: {
 		lib: {
 			entry: resolve(__dirname, "packages/slate-vue-next/index.ts"),

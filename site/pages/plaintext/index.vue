@@ -1,8 +1,11 @@
 <template>
-  <Slate :value="value">
+  <div class="container">
+    <Slate :value="value">
     <button @click="clear">clear</button>
     <Editable placeholder="Enter some plain text..." spellcheck="true" autoCorrect="on" :autoFocus="false"></Editable>
   </Slate>
+  </div>
+  
 </template>
 
 <script>
@@ -34,3 +37,12 @@ export default {
   }
 };
 </script>
+
+<style>
+.container {
+  height: 400px;
+}
+.container > div {
+  height: 100%;
+}
+</style>

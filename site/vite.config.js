@@ -5,7 +5,6 @@
  * @LastEditTime: 2024-07-09 17:32:40
  * @Descripttion: 
  */
-import { resolve } from "path"
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 

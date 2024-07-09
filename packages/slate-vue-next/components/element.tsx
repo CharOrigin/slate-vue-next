@@ -15,7 +15,7 @@ import {
   VueEditor,
   RenderElementAttributes, RenderElementProps
 } from 'slate-vue-shared';
-import { PropType, defineComponent, h, inject, FunctionalComponent, withDirectives, resolveDirective, Directive } from 'vue';
+import { PropType, defineComponent, h, inject, FunctionalComponent, withDirectives, resolveDirective, Directive, defineAsyncComponent } from 'vue';
 
 /**
  * Element
@@ -29,7 +29,7 @@ const Element: any = defineComponent({
     }
   },
   components:{
-    Children
+    Children: defineAsyncComponent(() => import('./children'))
   },
   mounted() {
     elementWatcherPlugin(this, 'element')
