@@ -8,32 +8,18 @@
     "url": "https://github.com/marsprince/slate-vue-next"
   },
   "scripts": {
+		"dev": "vite --config site/vite.config.js",
     "build": "vite build --config vite.config.js",
-    "serve": "webpack-dev-server --config ./config/webpack/site/webpack.dev.conf.js",
-    "release:site": "webpack --config ./config/webpack/site/webpack.publish.conf.js",
+    "release": "vite build --config site/vite.config.js",
     "commit": "rz-commit"
   },
   "devDependencies": {
-    "@razors/build-babel": "^0.0.20",
     "@vitejs/plugin-vue": "^5.0.5",
     "@vitejs/plugin-vue-jsx": "^4.0.0",
-    "@vue/babel-plugin-jsx": "^1.0.0-rc.5",
-    "babel-loader": "^8.1.0",
-    "css-loader": "^7.1.2",
-    "html-webpack-plugin": "^5.6.0",
     "less": "^4.2.0",
-    "less-loader": "^12.2.0",
     "rollup": "^4.18.0",
-    "rollup-plugin-terser": "^7.0.2",
-    "style-loader": "^4.0.0",
-    "ts-loader": "^6.2.2",
     "typescript": "^3.8.3",
     "vite": "^5.3.3",
-    "vue-loader": "^17.4.2",
-    "webpack": "^5.92.1",
-    "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^5.0.4",
-    "webpack-merge": "^4.2.2"
   },
   "dependencies": {
     "vue": "^3.0.4",

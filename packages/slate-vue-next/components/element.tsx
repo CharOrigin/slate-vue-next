@@ -3,12 +3,12 @@
  *  children: Node[]
  * }
  */
+import Children from './children'
 import { Editor, Node, Element as SlateElement } from 'slate'
 // @ts-ignore
 import getDirection from 'direction'
 
 import Text from './text'
-import Children from './children'
 import { elementWatcherPlugin, useEditor, useEffect, useRef } from '../plugins';
 import {
   NODE_TO_PARENT, NODE_TO_INDEX, KEY_TO_ELEMENT, NODE_TO_ELEMENT, ELEMENT_TO_NODE,
