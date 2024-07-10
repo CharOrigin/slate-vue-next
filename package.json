@@ -8,12 +8,13 @@
     "url": "https://github.com/marsprince/slate-vue-next"
   },
   "scripts": {
-		"dev": "vite --config site/vite.config.js",
+    "dev": "vite --config site/vite.config.js",
     "build": "vite build --config vite.config.js",
     "release": "vite build --config site/vite.config.js",
     "commit": "rz-commit"
   },
   "devDependencies": {
+    "@babel/core": "^7.24.7",
     "@vitejs/plugin-vue": "^5.0.5",
     "@vitejs/plugin-vue-jsx": "^4.0.0",
     "less": "^4.2.0",
@@ -22,7 +23,8 @@
     "vite": "^5.3.3"
   },
   "dependencies": {
-    "vue": "^3.0.4",
+    "vue": "^3.4.31",
+    "vue-fragment": "^1.6.0",
     "vue-router": "4.0.0-alpha.12"
   },
   "config": {

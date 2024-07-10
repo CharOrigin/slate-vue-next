@@ -2,7 +2,7 @@
  * @Author: yilong
  * @Date: 2024-07-08 10:36:56
  * @LastEditors: yilong
- * @LastEditTime: 2024-07-09 17:22:16
+ * @LastEditTime: 2024-07-10 10:52:34
  * @Descripttion: 
  */
 import { resolve } from "path"
@@ -17,6 +17,7 @@ export default defineConfig({
 		vueJsx(),
 	],
 	build: {
+		sourcemap: true,
 		lib: {
 			entry: resolve(__dirname, "packages/slate-vue-next/index.ts"),
 			name: "slate-vue-next",

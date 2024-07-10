@@ -4,8 +4,8 @@
   "dependencies": {
     "direction": "^1.0.4",
     "slate": "0.103.0",
-    "slate-vue-shared": "file:/Users/elon/Playground/slate-vue-next/packages/slate-vue-shared",
-    "vue": "^3.0.4"
+    "slate-vue-shared": "file:packages/slate-vue-shared",
+    "vue": "^3.4.31"
   },
   "main": "./dist/index.cjs.js",
   "module": "./dist/index.es.js",

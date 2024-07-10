@@ -2,6 +2,7 @@ import string from './string'
 import { PLACEHOLDER_SYMBOL, RenderLeafProps } from 'slate-vue-shared'
 import { defineComponent, PropType, inject, h } from 'vue';
 import { Text } from 'slate';
+import Fragment from './fragment';
 
 /**
  * The default custom leaf renderer.
@@ -46,7 +47,7 @@ const Leaf = defineComponent({
       );
     if ((leaf as any)[PLACEHOLDER_SYMBOL]) {
       children = (
-         <>
+         <Fragment>
             <span
               contenteditable={false}
               style={{
@@ -62,7 +63,7 @@ const Leaf = defineComponent({
             {(leaf as any).placeholder}
             </span>
             {children}
-        </>
+        </Fragment>
       )
     }
 

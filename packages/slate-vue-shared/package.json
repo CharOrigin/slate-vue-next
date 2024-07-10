@@ -4,7 +4,7 @@
   "dependencies": {
     "is-hotkey": "^0.2.0",
     "slate": "0.60.17",
-    "vue": "^3.0.4"
+    "vue": "^3.4.31"
   },
   "repository": "https://github.com/marsprince/slate-vue.git",
   "author": "liujia02 <bit_liujia@163.com>",
